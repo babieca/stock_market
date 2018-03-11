@@ -68,9 +68,7 @@ All the application is fully contained in the module `src`. <br /><br />
 ## Installation
 
 <br /><br />
-
 Run the following command:
-
 <br /><br />
 
 ```
