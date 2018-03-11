@@ -1,6 +1,8 @@
 <br />
 <br />
+
 ## Stock Market
+
 <br />
 <br />
 
@@ -10,7 +12,9 @@ The full details of the assignment are in the document `doc/Homework Assignment 
 
 <br />
 <br />
+
 ## Requirements
+
 <br />
 <br />
 
@@ -19,7 +23,9 @@ No non-standard packages are needed.<br />
 
 <br />
 <br />
+
 ## Tested on   
+
 <br />
 <br />
 
@@ -30,7 +36,9 @@ PyDev version 6.3.1<br />
    
 <br />
 <br />
+
 ## Code structure and usage
+
 <br />
 <br />
 
@@ -47,7 +55,9 @@ All the application is fully contained in the module `src`.
 
 <br />
 <br />
+
 ##### The calculations requested in the assignment instructions can be accessed by the following properties or methods:
+
 <br />
 
 - For a given instance of `Stock`:
@@ -68,12 +78,15 @@ All the application is fully contained in the module `src`.
          The standard definition of PE is Price/Earnings Per Share and not Price/Dividend.
          For more details:<br />
 <br />   
+
         - [P/E - Wikipedia](https://en.wikipedia.org/wiki/Price%E2%80%93earnings_ratio) <br />
         - [P/D - Wikipedia](https://en.wikipedia.org/wiki/Dividend_yield#Related_measures) <br />
 
 <br />
 <br />
+
 ## Tests
+
 <br />
 <br />
 
@@ -96,8 +109,10 @@ The structure of the `tests` folder is as follow:
 <br />
 <br />
 You can run each test from a text editor or using the following commands:
+
 <br />
 <br />
+
 ```
 
 $ git clone https://github.com/babieca/stock_market.git
@@ -111,5 +126,6 @@ $ python -m unittest -v test_trade.py
 $ python -m unittest -v test_GBCE.py
 
 ```
- <br />
- <br />
+
+<br />
+<br />
