@@ -1,6 +1,6 @@
 
 ## Stock Market
-=================
+
 
 
 This code is submitted as an answer to the assignment Super Simple Stocks Market
@@ -10,7 +10,7 @@ The full details of the assignment are in the document `doc/Homework Assignment 
 
 
 ## Requirements
-=================
+
 
 
 Application developed using Python 3.6.4.<br />
@@ -19,7 +19,7 @@ No non-standard packages are needed.<br />
 
 
 ## Tested on   
-==============
+
 
 
 ARCH Linux version 4.15.6-1 x86_84<br />
@@ -30,7 +30,7 @@ PyDev version 6.3.1<br />
 
 
 ## Code structure and usage
-===============================
+
 
 
 All the application is fully contained in the module `src`.
@@ -67,7 +67,7 @@ All the application is fully contained in the module `src`.
 
 
 ## Tests
-=========
+
 
 
 A moderately extensive (although by no means exhaustive) suite of tests is included in `tests/`.
@@ -103,8 +103,8 @@ $ python -m unittest -v test_trade.py
 $ python -m unittest -v test_GBCE.py
 
 ```
-
-
+ <br />
+ <br />
 
 
 
