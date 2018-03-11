@@ -109,7 +109,7 @@ You can run each test from a text editor or using the following commands:
 
 ```
 
-$ cd stock_market/tests/
+$ cd ./tests/
 
 $ python -m unittest -v test_stock.py
 
