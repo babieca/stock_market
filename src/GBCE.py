@@ -34,7 +34,7 @@ class GlobalBeverageCorporationExchange:
     def all_share_index(self, current_time: datetime=datetime.now()) -> float:
         """
         :param current_time: The point of time for which we want to obtain the index.
-        :return: The geometric mean of all stock prices. Returns None if any of them is
+        :return: The geometric mean of all stock prices. Returns 0 if any of them is
             None.
         """
         n = len(self.stocks)
