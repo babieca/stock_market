@@ -104,7 +104,6 @@ The structure of the `tests` folder is as follow: <br /><br />
 You can run each test from a text editor or using the following commands:
 
 <br /><br />
-
 ```
 
 $ cd ./tests/
