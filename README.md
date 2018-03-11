@@ -49,7 +49,7 @@ All the application is fully contained in the module `src`. <br /><br />
 
 - For a given instance of `Stock`: <br /><br />
   1. Calculate the **dividend yield*: `Stock.dividend_yield` <br /><br />
-  2. Calculate the **Price/Dividend ratio(*)**: `Stock.price_dividend_ratio` <br /><br />
+  2. Calculate the **Price/Dividend ratio**(*): `Stock.price_dividend_ratio` <br /><br />
   3. Record a **trade, with timestamp, quantity of shares, buy or sell indicator and price**. <br /><br />
   4. Calculate the **VWAP (Volume Weighted Stock Price)** on trades recorded in past 5 minutes: `Stock.vwap` <br /><br />
   5. Calculate the **GBCE All Share Index** using the geometric mean of prices for all stocks: `GBCE.all_share_index`. <br /><br />
@@ -57,11 +57,11 @@ All the application is fully contained in the module `src`. <br /><br />
 
 <br />
 
-** Note: The assignment requests to calculate PE as Price/Dividend.<br /> 
+(*) *Note: The assignment requests to calculate PE as Price/Dividend.<br /> 
          The standard definition of PE is Price/Earnings Per Share and not Price/Dividend.
          For more details:<br /><br />
         - [P/E - Wikipedia](https://en.wikipedia.org/wiki/Price%E2%80%93earnings_ratio) <br />
-        - [P/D - Wikipedia](https://en.wikipedia.org/wiki/Dividend_yield) <br />
+        - [P/D - Wikipedia](https://en.wikipedia.org/wiki/Dividend_yield)* <br />
 
 <br /><br />
 
@@ -74,8 +74,8 @@ The structure of the `tests` folder is as follow: <br /><br />
   - **Data file**: contains the stocks and trades used for the tests files. <br /> <br /><br />
   - **Config folder**: contains the stock and trade configuration file. <br /><br />
        These files can be completely customised to meet the structure of the `data` file.
-       If future improvements for storing data (i.e. using a database instead of a file with tuples) were implemented,
-       the config_trade.py and config_stock.py file could be adjusted accordingly and independently from the `src` folder <br /><br />
+       If future improvements are done (i.e. using a database instead of a file with tuples as input),
+       the config_xxx.py files could be adjusted accordingly to reflect those changes <br /><br />
   - **Test_stock file**: a serie of tests of a stock using unittest module. The file reads the `data` file and perform the test. <br /><br />
   - **Test_trade file**: a serie of tests of a trades using unittest module. The file reads the `data` file and perform the test. <br /><br />
   - **Test_GBCE file**: a serie of tests of GBCE using unittest module. The file reads the `data` file and perform the test. <br /><br />
