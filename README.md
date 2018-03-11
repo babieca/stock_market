@@ -35,11 +35,11 @@ PyDev version 6.3.1<br />
 <br /><br />
 
 All the application is fully contained in the module `src`. <br /><br />
-  - Tickers file: contains the universe of tickers (future improvements: store the list of tickers in a database). <br /><br />
-  - Stock file: define a stock (common/preferred) and its attributes (ticker, dividend, par value, fixed dividend).
+  - **Tickers file:** contains the universe of tickers (future improvements: store the list of tickers in a database). <br /><br />
+  - **Stock file:** define a stock (common/preferred) and its attributes (ticker, dividend, par value, fixed dividend).
        `Stock` itself is abstract objects. It can be created either calling `CommonStock` or `PreferredStock`. <br /><br />
-  - Trade file: define a trade with its attributes (ticker, transaction type, price, quantity, timestamp). <br /><br />
-  - GBCE file: records new transactions and calculates the GBCE All Share Index.
+  - **Trade file:** define a trade with its attributes (ticker, transaction type, price, quantity, timestamp). <br /><br />
+  - **GBCE file:** records new transactions and calculates the GBCE All Share Index.
 
 <br /><br />
 
@@ -48,20 +48,20 @@ All the application is fully contained in the module `src`. <br /><br />
 <br />
 
 - For a given instance of `Stock`: <br /><br />
-  1. Calculate the dividend yield: `Stock.dividend_yield` <br /><br />
-  2. Calculate the Price/Dividend ratio**: `Stock.price_dividend_ratio` <br /><br />
-  3. Record a trade, with timestamp, quantity of shares, buy or sell indicator and price. <br /><br />
-  4. Calculate the VWAP (Volume Weighted Stock Price) on trades recorded in past 5 minutes: `Stock.vwap` <br /><br />
-  5. Calculate the GBCE All Share Index using the geometric mean of prices for all stocks: `GBCE.all_share_index`. <br /><br />
+  1. Calculate the **dividend yield*: `Stock.dividend_yield` <br /><br />
+  2. Calculate the **Price/Dividend ratio(*)**: `Stock.price_dividend_ratio` <br /><br />
+  3. Record a **trade, with timestamp, quantity of shares, buy or sell indicator and price**. <br /><br />
+  4. Calculate the **VWAP (Volume Weighted Stock Price)** on trades recorded in past 5 minutes: `Stock.vwap` <br /><br />
+  5. Calculate the **GBCE All Share Index** using the geometric mean of prices for all stocks: `GBCE.all_share_index`. <br /><br />
 
 
 <br />
 
-** Note: The assignment requests to calculate PE as Price/Dividend. 
+** Note: The assignment requests to calculate PE as Price/Dividend.<br /> 
          The standard definition of PE is Price/Earnings Per Share and not Price/Dividend.
          For more details:<br /><br />
         - [P/E - Wikipedia](https://en.wikipedia.org/wiki/Price%E2%80%93earnings_ratio) <br />
-        - [P/D - Wikipedia](https://en.wikipedia.org/wiki/Dividend_yield#Related_measures) <br />
+        - [P/D - Wikipedia](https://en.wikipedia.org/wiki/Dividend_yield) <br />
 
 <br /><br />
 
@@ -71,14 +71,14 @@ All the application is fully contained in the module `src`. <br /><br />
 
 A moderately extensive (although by no means exhaustive) suite of tests is included in `tests/`.
 The structure of the `tests` folder is as follow: <br /><br />
-  - Data file: contains the stocks and trades used for the tests files. <br /> <br /><br />
-  - Config folder: contains the stock and trade configuration file. <br /><br />
-       The files are customizable; The properties or methods are designed to work with the structure of the `data` file.
+  - **Data file**: contains the stocks and trades used for the tests files. <br /> <br /><br />
+  - **Config folder**: contains the stock and trade configuration file. <br /><br />
+       These files can be completely customised to meet the structure of the `data` file.
        If future improvements for storing data (i.e. using a database instead of a file with tuples) were implemented,
        the config_trade.py and config_stock.py file could be adjusted accordingly and independently from the `src` folder <br /><br />
-  - Test_stock file: a serie of tests of a stock using unittest module. The file reads the `data` file and perform the test. <br /><br />
-  - Test_trade file: a serie of tests of a trades using unittest module. The file reads the `data` file and perform the test. <br /><br />
-  - Test_GBCE file: a serie of tests of GBCE using unittest module. The file reads the `data` file and perform the test. <br /><br />
+  - **Test_stock file**: a serie of tests of a stock using unittest module. The file reads the `data` file and perform the test. <br /><br />
+  - **Test_trade file**: a serie of tests of a trades using unittest module. The file reads the `data` file and perform the test. <br /><br />
+  - **Test_GBCE file**: a serie of tests of GBCE using unittest module. The file reads the `data` file and perform the test. <br /><br />
 
 <br />
 
