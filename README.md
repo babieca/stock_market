@@ -37,7 +37,7 @@ PyDev version 6.3.1<br />
 All the application is fully contained in the module `src`. <br /><br />
   - **Tickers file:** contains the universe of tickers (future improvements: store the list of tickers in a database). <br /><br />
   - **Stock file:** define a stock (common/preferred) and its attributes (ticker, dividend, par value, fixed dividend).
-       `Stock` itself is abstract objects. It can be created either calling `CommonStock` or `PreferredStock`. <br /><br />
+       `Stock` itself is an abstract objects. It can be created either calling `CommonStock` or `PreferredStock`. <br /><br />
   - **Trade file:** define a trade with its attributes (ticker, transaction type, price, quantity, timestamp). <br /><br />
   - **GBCE file:** records new transactions and calculates the GBCE All Share Index.
 
