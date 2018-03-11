@@ -65,6 +65,27 @@ All the application is fully contained in the module `src`. <br /><br />
 
 <br /><br />
 
+## Installation
+
+<br /><br />
+
+Run the following command:
+
+<br /><br />
+
+```
+
+$ git clone https://github.com/babieca/stock_market.git
+
+$ cd stock_market/
+
+$ python setup.py install  (it may require root access)
+
+
+```
+
+<br /><br />
+
 ## Tests
 
 <br /><br />
@@ -87,8 +108,6 @@ You can run each test from a text editor or using the following commands:
 <br /><br />
 
 ```
-
-$ git clone https://github.com/babieca/stock_market.git
 
 $ cd stock_market/tests/
 
