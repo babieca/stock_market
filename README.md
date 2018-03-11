@@ -1,7 +1,8 @@
+<br />
 
 ## Stock Market
-
-
+<br />
+<br />
 
 This code is submitted as an answer to the assignment Super Simple Stocks Market
 included in the hiring process at J.P.Morgan.
@@ -10,8 +11,8 @@ The full details of the assignment are in the document `doc/Homework Assignment 
 
 
 ## Requirements
-
-
+<br />
+<br />
 
 Application developed using Python 3.6.4.<br />
 No non-standard packages are needed.<br />
@@ -19,8 +20,8 @@ No non-standard packages are needed.<br />
 
 
 ## Tested on   
-
-
+<br />
+<br />
 
 ARCH Linux version 4.15.6-1 x86_84<br />
 BASH shell version 4.4.19(1)-release<br />
@@ -30,8 +31,8 @@ PyDev version 6.3.1<br />
 
 
 ## Code structure and usage
-
-
+<br />
+<br />
 
 All the application is fully contained in the module `src`.
 
@@ -67,8 +68,8 @@ All the application is fully contained in the module `src`.
 
 
 ## Tests
-
-
+<br />
+<br />
 
 A moderately extensive (although by no means exhaustive) suite of tests is included in `tests/`.
 The structure of the `tests` folder is as follow:
@@ -105,7 +106,3 @@ $ python -m unittest -v test_GBCE.py
 ```
  <br />
  <br />
-
-
-
-
